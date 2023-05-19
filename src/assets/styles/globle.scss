@@ -1,0 +1,17 @@
+.total_body{
+    background-image: url("../images/gb_img1.jpg");
+    // background-size: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    // background-position: 100%;
+    // background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    background-blend-mode: hard-light;
+}
+
+#cx-main{
+    padding-top: 100px;
+    position: relative;
+    height:max-content;
+}
