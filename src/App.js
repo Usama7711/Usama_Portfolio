@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import '../src/assets/styles/main.scss';
 import { Route, Routes } from 'react-router-dom';
 import DashBoard from './Pages/DashBoard';
 import Header from './sharedComponent/Header';

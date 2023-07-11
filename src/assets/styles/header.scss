@@ -1,39 +1,4 @@
 .Header_main {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    transition: 0.6s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 15%;
-    z-index: 10000;
-    font-family: "Poppins", sans-serif;
-
-    .rightLogo {
-        img {
-            height: 27px;
-            width: 115px;
-        }
-    }
-
-    .Menu {
-        a {
-            color: rgba(250, 250, 250, 0.9);
-            text-decoration: none;
-            height: 70px;
-            padding: 0px 0.85em;
-            transition: all 0.2s ease;
-            font-weight: 600;
-        }
-
-        .active {
-            color: #20c997;
-        }
-    }
+    background-color: black;
 }
