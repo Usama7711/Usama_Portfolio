@@ -1,4 +1,66 @@
-.Header_main {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
     width: 100%;
-    background-color: black;
+    top: 0;
+    background-color: transparent;
+    z-index: 100;
+    // opacity: 0.5;
+}
+
+nav {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    color: rgba(250, 250, 250, 0.9);
+    font-weight: 600;
+
+    &:hover {
+        color: #20c997;
+    }
+}
+
+// animmation
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    transform: scaleX(0);
+    background: #20c997;
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
+
+nav a:hover::after {
+    transform: scaleX(1)
+}
+
+.scrolled {
+    a{
+        background-color: #f0f0f0;
+    }
+    /* Updated background color */
 }

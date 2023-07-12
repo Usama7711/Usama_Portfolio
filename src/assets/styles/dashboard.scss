@@ -1,0 +1,52 @@
+.dashboard_wrapper {
+    height: calc(100vh - 55px);
+    position: relative;
+
+    img {
+        height: 99.5vh;
+        width: 100%;
+    }
+
+    .bdopacity {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.5;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    }
+
+    .contain {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        // border: 1px solid red;
+        height: 97vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        .Welcome {
+            font-size: 1.75rem !important;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .Details {
+            height: 90px;
+            font-size: 4rem;
+            font-weight: 600;
+            color: rgba(250, 250, 250, 0.9);
+            margin-bottom: 1rem;
+        }
+
+        .location {
+            font-size: 1.31rem;
+            color: #dee3e4 !important;
+        }
+    }
+}
