@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import bgimg from "../assets/images/gb_img2.jpg";
+import About from './About';
+import Services from './Services';
 const DashBoard = () => {
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -45,6 +47,8 @@ const DashBoard = () => {
           <p className="location">Based in Nanded , Maharashtra</p>
         </div>
       </div>
+      <About/>
+      <Services/>
     </div>
   )
 }
