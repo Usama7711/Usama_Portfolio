@@ -6,12 +6,15 @@ import Header from './sharedComponent/Header';
 
 function App() {
   return (
-    <div className="">
-      <Header/>
-      <Routes>
-        <Route path='/' element={<DashBoard />} />
-      </Routes>
-    </div>
+    <>
+      
+      <div className="">
+        <Header />
+        <Routes>
+          <Route path='/' element={<DashBoard />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

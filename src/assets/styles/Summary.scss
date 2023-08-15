@@ -1,0 +1,180 @@
+.SummaryMain {
+    .headerAbout {
+        position: relative;
+        text-align: center;
+        height: 140px;
+        margin-bottom: 50px;
+
+        .backGroundHeading {
+            font-size: calc(1.95rem + 8.4vw);
+            line-height: 1.4;
+            font-weight: 600;
+            color: #dee3e4 !important;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 23%;
+        }
+
+        .mainHeading {
+            font-weight: 600;
+            font-size: 2.25rem;
+            line-height: 1.5;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+        }
+
+        .BottomBorderAbout {
+            display: flex;
+            border: 2px solid #20c997;
+            width: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .summryExprince {
+        margin-bottom: 30px;
+
+        .ExpHeading {
+            font-size: 22px;
+            color: #252b33;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .ExpSingle {
+            border: 1px solid lightgray;
+            padding: 20px;
+            height: auto;
+
+            .duration {
+                color: white;
+                background-color: #20c997;
+                width: fit-content;
+                font-size: 14px;
+                padding: 3px 9px;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+
+            .position {
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 9px;
+            }
+
+            .companyName {
+                color: rgb(255, 68, 68);
+                font-size: 18px;
+
+            }
+
+            .discription {
+                color: #4c4d4d;
+                font-size: 15px;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    .skillsMain {
+        margin-bottom: 40px;
+        .SkillHeading {
+            font-size: 22px;
+            color: #252b33;
+            font-weight: 700;
+        }
+
+        .skillSingle {
+            margin-bottom: 40px;
+
+            .headSkill {
+                display: flex;
+                justify-content: space-between;
+
+                .skillName {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                .ratioSkill {
+                    font-size: 16px;
+                }
+            }
+
+            .RangeSkill {
+                border: 0.5px solid lightgrey;
+                width: 100%;
+                height: 10px;
+                border-radius: 50px;
+
+                .Web89 {
+                    background-color: #20c997;
+                    width: 89%;
+                    height: 100%;
+                    border-radius: 50px;
+                }
+
+                .Web97 {
+                    background-color: #20c997;
+                    width: 97%;
+                    height: 100%;
+                    border-radius: 50px;
+                }
+
+                .Web80 {
+                    background-color: #20c997;
+                    width: 80%;
+                    height: 100%;
+                    border-radius: 50px;
+                }
+
+                .Web95 {
+                    background-color: #20c997;
+                    width: 95%;
+                    height: 100%;
+                    border-radius: 50px;
+                }
+
+                .Web99 {
+                    background-color: #20c997;
+                    width: 99%;
+                    height: 100%;
+                    border-radius: 50px;
+                }
+
+                .Web85 {
+                    background-color: #20c997;
+                    width: 85%;
+                    height: 100%;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+        .SkillDownloadCv {
+            button {
+                color: grey;
+                padding: 10px 30px;
+                border: 1px solid grey;
+                border-radius: 50px;
+                background-color: white;
+                transition: 0.3s;
+                &:hover{
+                    background-color: rgba(128, 128, 128, 0.751);
+                    color: white;
+                    img{
+                        fill:white !important;
+                    }
+                }
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

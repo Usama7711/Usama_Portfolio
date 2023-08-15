@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from "../assets/images/Logo.svg"
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -36,9 +35,9 @@ const Header = () => {
       <header id='myHeader'>
         <nav>
           <Link to="#">Home</Link>
-          <Link to="#">About</Link>
-          <Link to="#">What I DO</Link>
-          <Link to="#">Resume</Link>
+          <a href="#AboutMe">About</a>
+          <a href="#ServicesMe">What I DO</a>
+          <a href="#ResumeMe">Resume</a>
           <Link to="#">Portfolio</Link>
           <Link to="#">Contact</Link>
         </nav>

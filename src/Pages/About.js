@@ -33,7 +33,7 @@ const About = () => {
         };
     }, [count]);
     return (
-        <div className='AboutUs_Main'>
+        <div className='AboutUs_Main' id='AboutMe'>
             <div className="headerAbout">
                 <div className="backGroundHeading">
                     ABOUT ME

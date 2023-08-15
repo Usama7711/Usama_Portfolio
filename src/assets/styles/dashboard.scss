@@ -1,9 +1,35 @@
+.topScroller {
+    background-color: #20c997;
+    height: 45px;
+    width: 45px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    z-index: 110;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
+
+    img {
+        height: 22px;
+        width: 22px;
+    }
+}
+
+
+
 .dashboard_wrapper {
     height: 100vh;
     position: relative;
 
     img {
-        height: 99.5vh;
+        height: auto;
         width: 100%;
     }
 
@@ -11,7 +37,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        opacity: 0.5;
+        opacity: 0.8;
         height: 100%;
         width: 100%;
         background-color: black;

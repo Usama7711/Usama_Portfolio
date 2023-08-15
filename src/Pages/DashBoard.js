@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import bgimg from "../assets/images/gb_img2.jpg";
+import bgimg from "../assets/images/backGround.jpeg";
 import About from './About';
 import Services from './Services';
+import Summary from './Summary';
+import TopScroller from './TopScroller';
+import Mywork from './Mywork';
 const DashBoard = () => {
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -38,8 +41,8 @@ const DashBoard = () => {
 
   return (
     <div id='cx-main'>
-      <div className="dashboard_wrapper">
-        <img src={bgimg} alt="" />
+      <div className="dashboard_wrapper" id='dashBoardMe'>
+        <img src={bgimg} alt=""/>
         <div className="bdopacity"></div>
         <div className="contain">
           <p className="Welcome">Welcome</p>
@@ -47,8 +50,11 @@ const DashBoard = () => {
           <p className="location">Based in Nanded , Maharashtra</p>
         </div>
       </div>
-      <About/>
-      <Services/>
+      <About />
+      <Services />
+      <Summary />
+      <Mywork />
+      <TopScroller/>
     </div>
   )
 }
