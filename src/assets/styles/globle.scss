@@ -1,10 +1,44 @@
-#cx-main{
+#cx-main {
     @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
     // border: 1px solid red;
     // padding: 0 30px;
     position: relative;
 }
 
-body{
+body {
     scroll-behavior: smooth !important;
+}
+
+.Common-Modal {
+    .modal_head {
+        .heading {
+            font-size: 22px;
+            font-weight: 700;
+            color: black;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .privewCarosal {
+            padding-bottom: 30px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .carousel-indicators{
+            bottom: -50px;
+            // width: 100%;
+            button{
+                background-color: #20c997;
+            }
+        }
+        .carousel-control-prev {
+            display: none;
+        }
+        .carousel-control-next {
+            display: none;
+        }
+    }
 }
