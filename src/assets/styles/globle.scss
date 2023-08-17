@@ -10,6 +10,17 @@ body {
 }
 
 .Common-Modal {
+    background-color: rgba(0, 0, 0, 0.385);
+
+    .modal-content {
+    }
+    
+    .modal-body {
+        border-radius: 20px;
+        background: linear-gradient(180deg, #edf3d6, #eed3e9);
+        padding: 20px;
+    }
+
     .modal_head {
         .heading {
             font-size: 22px;
@@ -27,18 +38,44 @@ body {
                 height: auto;
             }
         }
-        .carousel-indicators{
+
+        .carousel-indicators {
             bottom: -50px;
+
             // width: 100%;
-            button{
+            button {
                 background-color: #20c997;
             }
         }
+
         .carousel-control-prev {
             display: none;
         }
+
         .carousel-control-next {
             display: none;
+        }
+    }
+
+    .projecInformations {
+        .head {
+            font-size: 18px;
+            font-weight: 700;
+            color: #252b33;
+            margin-bottom: 5px;
+        }
+
+        .contain {
+            font-size: 16px;
+            font-weight: 300;
+
+            span {
+                font-weight: 500;
+
+                a {
+                    color: #20c997;
+                }
+            }
         }
     }
 }
