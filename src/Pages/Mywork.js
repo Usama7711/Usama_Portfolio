@@ -14,12 +14,17 @@ import PristonPri3 from "../assets/images/PristonPri (3).png"
 import CloudPr1 from "../assets/images/CloudPri (1).png"
 import CloudPr2 from "../assets/images/CloudPri (2).png"
 import CloudPr3 from "../assets/images/CloudPri (3).png"
+import WifiPri1 from "../assets/images/WifiPri (1).png"
+import WifiPri2 from "../assets/images/WifiPri (2).png"
+import WifiPri3 from "../assets/images/WifiPri (3).png"
+import WifiPri4 from "../assets/images/WifiPri (4).png"
 
 
 const Mywork = () => {
     const [edsysModal, setEdsysModal] = useState(false);
     const [pristonModal, setPristonModal] = useState(false);
     const [cloudModal, setCloudModal] = useState(false);
+    const [wifiAttendance, setWifiAttendance] = useState(false);
 
     const handleClose = () => setEdsysModal(false);
     const handleShow = () => setEdsysModal(true);
@@ -29,6 +34,9 @@ const Mywork = () => {
 
     const handleCloseCloud = () => setCloudModal(false);
     const handleShowCloud = () => setCloudModal(true);
+
+    const handleCloseWifi = () => setWifiAttendance(false);
+    const handleShowWifi = () => setWifiAttendance(true);
     return (
         <div className="MyworkMian">
             <div className="headerMywork">
@@ -75,7 +83,7 @@ const Mywork = () => {
                                                     <p className="projectTitle">Edsys <br /> ( Eduction System & Solutions )</p>
                                                 </div>
                                             </div>
-                                            <div className="singlePro WifiMain">
+                                            <div className="singlePro WifiMain" onClick={() => { handleShowWifi() }}>
                                                 <div className="Wifi">
                                                     <img src={WifiLogo} alt="" />
                                                 </div>
@@ -235,7 +243,7 @@ const Mywork = () => {
             </Modal>
 
             {/* CloudXperte */}
-            <Modal show={cloudModal} onHide={handleCloseCloud}  size='xl' centered className='Common-Modal'>
+            <Modal show={cloudModal} onHide={handleCloseCloud} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
                         <div className="row">
@@ -266,6 +274,49 @@ const Mywork = () => {
                                     <p className="contain">Technologies : <span>HTML, CSS, Bootstrap, Next.js</span></p>
                                     <p className="contain">Role : <span>UI developer</span></p>
                                     <p className="contain">URL : <span><a href="http://cloudxperte.com">cloudxperte</a></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Modal.Body>
+            </Modal>
+
+            {/* WifiAttendancec */}
+            <Modal show={wifiAttendance} onHide={handleCloseWifi} size='xl' centered className='Common-Modal'>
+                <Modal.Body>
+                    <div className="modal_head">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="heading">Wifi Attendance</div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="privewCarosal">
+                                    <Carousel fade>
+                                        <Carousel.Item>
+                                            <img src={WifiPri1} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={WifiPri3} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={WifiPri2} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={WifiPri4} alt="" />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="projecInformations">
+                                    <p className="head">Project Info:</p>
+                                    <p className="contain">Wi-Fi attendance daily attendance tracker is one-of-a-kind system designed with businesses like yours in mind. Spend less time on HR management and focus on what matters most to your organization.</p>
+                                    <p className="head">Project Details:</p>
+                                    <p className="contain">Client : <span>Redbytes</span></p>
+                                    <p className="contain">Technologies : <span>HTML, Sass, Bootstrap, React.js</span></p>
+                                    <p className="contain">Challenging Task : <span> <a href='http://wififrontoffice.ui.redbytes.in/teamchart'>Team Chart</a></span> ( Using HTML and Sass Only ) And <b>Dark / Light Mode</b></p>
+                                    <p className="contain">URL : <span><a href="http://wififrontoffice.ui.redbytes.in/dashboard">www.wifiAttendance.com</a></span></p>
 
                                 </div>
                             </div>
