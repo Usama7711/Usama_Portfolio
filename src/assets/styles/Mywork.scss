@@ -61,9 +61,10 @@
 
             .singlePro {
                 display: flex;
-                margin: 15px;
+                margin:  15px 0;
+                justify-content: center;
                 position: relative;
-                width: 100%;
+                // width: 100%;
                 height: 190px;
                 cursor: pointer;
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -78,9 +79,14 @@
                     }
                 }
             }
+            .singlePro:hover ~ .ProjectBorderBottom{
+                opacity: 1;
+                margin-left: 0px !important;
+                transition: all 0.5s ease;
+            }
 
             .pristonMain {
-                height: 380px !important;
+                // height: 380px !important;
             }
 
             .backGrondProduct {
@@ -97,9 +103,8 @@
                 bottom: 0;
                 right: o;
                 left: 0;
-                transition: 0.5s;
+                transition: 1s;
                 opacity: 0;
-
                 &:hover {
                     opacity: 1;
                 }
@@ -130,9 +135,33 @@
                 }
 
             }
+            .VehicalTracking {
+
+                display: flex;
+                justify-content: center;
+                background: #f6efe9;
+
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+
+            }
 
             .Vehicle {
 
+                display: flex;
+                justify-content: center;
+                
+
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+
+            }
+            .AminalApp {
+                background: radial-gradient(circle, rgba(255,255,255,1) 15%, rgba(102,124,226,1) 54%);
                 display: flex;
                 justify-content: center;
                     
@@ -163,8 +192,18 @@
 
                 display: flex;
                 justify-content: center;
-                background: white;
+                // background: white;
 
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+            .MyuniversZ {
+
+                display: flex;
+                justify-content: center;
+                background: linear-gradient(0deg, rgba(255,255,255,1) 1%, rgba(1,14,78,1) 100%);
                 img {
                     width: 80%;
                     height: auto;
@@ -173,4 +212,11 @@
 
         }
     }
+}
+.ProjectBorderBottom{
+    border: 2px solid #20c997 ;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    margin-left: -250px;
 }
