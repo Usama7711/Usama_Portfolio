@@ -30,6 +30,22 @@ import AnimalApp1 from "../assets/images/AnimalApp (1).png"
 import AnimalApp2 from "../assets/images/AnimalApp (2).png"
 import AnimalApp3 from "../assets/images/AnimalApp (3).png"
 import AnimalApp4 from "../assets/images/AnimalApp (4).png"
+import FleetPri1 from "../assets/images/FleetPri (1).png"
+import FleetPri2 from "../assets/images/FleetPri (2).png"
+import FleetPri3 from "../assets/images/FleetPri (3).png"
+import FleetPri4 from "../assets/images/FleetPri (4).png"
+import DeeniyaPri1 from "../assets/images/DeeniyaPri (1).png"
+import DeeniyaPri2 from "../assets/images/DeeniyaPri (2).png"
+import DeeniyaPri3 from "../assets/images/DeeniyaPri (3).png"
+import DeeniyaPri4 from "../assets/images/DeeniyaPri (4).png"
+import CostCalcu1 from "../assets/images/CostCalcu (1).png"
+import CostCalcu2 from "../assets/images/CostCalcu (2).png"
+import CostCalcu3 from "../assets/images/CostCalcu (3).png"
+import CostCalcu4 from "../assets/images/CostCalcu (4).png"
+import TestRevel1 from "../assets/images/TestRevel (1).png"
+import TestRevel2 from "../assets/images/TestRevel (2).png"
+import TestRevel3 from "../assets/images/TestRevel (3).png"
+import TestRevel4 from "../assets/images/TestRevel (4).png"
 import VehicleTracking1 from "../assets/images/VehicleTracking (1).png"
 import VehicleTracking2 from "../assets/images/VehicleTracking (2).png"
 import VehicleTracking3 from "../assets/images/VehicleTracking (3).png"
@@ -37,8 +53,11 @@ import VehicleTracking4 from "../assets/images/VehicleTracking (4).png"
 import VehicleTracking5 from "../assets/images/VehicleTracking (5).png"
 import VehiclTrackingLogo from "../assets/images/VehiclTrackingLogo.svg"
 import MyUnivers from "../assets/images/MyUnivers.svg"
-import FleetLogo from "../assets/images/FleetLogo.png"
+import FleetLogo from "../assets/images/FleetManaLogo.svg"
 import AniamlApp from "../assets/images/AniamlApp.svg"
+import DeeniyatLogo from "../assets/images/DeeniyatLogo.png"
+import AppCost from "../assets/images/AppCost.png"
+import TestRevellogo from "../assets/images/TestRevellogo.png"
 
 
 const Mywork = () => {
@@ -51,12 +70,24 @@ const Mywork = () => {
     const [animalAdmin, setAnimalAdmin] = useState(false);
     const [myUnivers, setMyUnivers] = useState(false);
     const [fleetManagement, setFleetManagement] = useState(false);
+    const [deeniyatPlus, setDeeniyatPlus] = useState(false);
+    const [appCostCalclu, setAppCostCalclu] = useState(false);
+    const [testRevel, setTestRevel] = useState(false);
 
     const handleClose = () => setEdsysModal(false);
     const handleShow = () => setEdsysModal(true);
 
     const handleClosePriston = () => setPristonModal(false);
     const handleShowPriston = () => setPristonModal(true);
+
+    const handleCloseTestRevel = () => setTestRevel(false);
+    const handleShowTestRevel = () => setTestRevel(true);
+
+    const handleCloseAppCost = () => setAppCostCalclu(false);
+    const handleShowAppCost = () => setAppCostCalclu(true);
+
+    const handleCloseDeeniyat = () => setDeeniyatPlus(false);
+    const handleShowDeeniyat = () => setDeeniyatPlus(true);
 
     const handleCloseCloud = () => setCloudModal(false);
     const handleShowCloud = () => setCloudModal(true);
@@ -91,7 +122,7 @@ const Mywork = () => {
                     </span>
                 </div>
             </div>
-            <div className="WorkBody">
+            <div className="WorkBody mb-5">
                 <div className="container">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                         <Nav variant="pills" className="flex-column">
@@ -104,12 +135,12 @@ const Mywork = () => {
                             <Nav.Item>
                                 <Nav.Link eventKey="three">Next Js</Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
+                            {/* <Nav.Item>
                                 <Nav.Link eventKey="four">UI design SSR</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="five">UI design CSR</Nav.Link>
-                            </Nav.Item>
+                            </Nav.Item> */}
                         </Nav>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
@@ -182,6 +213,17 @@ const Mywork = () => {
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
                                         <div className="col-lg-4">
+                                            <div className="singlePro" onClick={() => { handleShowFleetManagement() }}>
+                                                <div className="FleetManagement">
+                                                    <img src={FleetLogo} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">Fleet Management<br /> ( Goods Carrier )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
+                                        <div className="col-lg-4">
                                             <div className="singlePro VehicleMain" onClick={() => { handleShowAnimalAdmin() }}>
                                                 <div className="AminalApp w-100">
                                                     <img src={AniamlApp} alt="" />
@@ -203,9 +245,120 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
+                                    </div>
+                                </div>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="second" >
+                                <div className="AllProject">
+                                    <div className="row">
+                                        <div className="col-lg-4">
+                                            <div className="singlePro pristonMain" onClick={() => { handleShowDeeniyat() }}>
+                                                <div className="Deeniyat w-100">
+                                                    <img src={DeeniyatLogo} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">Priston <br /> ( Accounting Web Application )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
+                                        <div className="col-lg-4">
+                                            <div className="singlePro pristonMain" onClick={() => { handleShowPriston() }}>
+                                                <div className="Priston w-100">
+                                                    <img src={Priston} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">Priston <br /> ( Accounting Web Application )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
+                                        <div className="col-lg-4">
+                                            <div className="singlePro WifiMain" onClick={() => { handleShowWifi() }}>
+                                                <div className="Wifi">
+                                                    <img src={WifiLogo} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">Wifi Attendance <br /> ( Manage Empolyes Data )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
+
+                                        <div className="col-lg-4">
+                                            <div className="singlePro" onClick={() => { handleShow() }}>
+                                                <div className="edsys">
+                                                    <img src={edsys} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">Edsys <br /> ( Eduction System & Solutions )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
+                                        <div className="col-lg-4">
+                                            <div className="singlePro pristonMain" onClick={() => { handleShowVehicalTracking() }}>
+                                                <div className="VehicalTracking w-100">
+                                                    <img src={VehiclTrackingLogo} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">Vehicle Tracking <br /> ( Vehicle Management System )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
+                                        <div className="col-lg-4">
+                                            <div className="singlePro VehicleMain" onClick={() => { handleShowAnimalAdmin() }}>
+                                                <div className="AminalApp w-100">
+                                                    <img src={AniamlApp} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">Animal App <br /> ( Animal's healts & Services )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
+                                        <div className="col-lg-4">
+                                            <div className="singlePro MyuniversZ" onClick={() => { handleShowMyUnivers() }}>
+                                                <div className="office">
+                                                    <img src={MyUnivers} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">My Universe<br /> ( For Commercial purpose )</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="three">
+                                <div className="AllProject">
+                                    <div className="row">
+                                        <div className="col-lg-4">
+                                            <div className="singlePro" onClick={() => { handleShowAppCost() }}>
+                                                <div className="office">
+                                                    <img src={AppCost} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">App Cost Calculator<br /> ( App Cost Estimation )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
+                                        <div className="col-lg-4">
+                                            <div className="singlePro" onClick={() => { handleShowTestRevel() }}>
+                                                <div className="FleetManagement">
+                                                    <img src={TestRevellogo} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">Test Revel<br /> ( Goods Carrier )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
                                         <div className="col-lg-4">
                                             <div className="singlePro" onClick={() => { handleShowFleetManagement() }}>
-                                                <div className="office">
+                                                <div className="FleetManagement">
                                                     <img src={FleetLogo} alt="" />
                                                 </div>
                                                 <div className="backGrondProduct">
@@ -214,15 +367,40 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
+                                        <div className="col-lg-4">
+                                            <div className="singlePro WifiMain" onClick={() => { handleShowOffice() }}>
+                                                <div className="office">
+                                                    <img src={officeLogo} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">Office Caller <br /> ( Live Tracking & Services )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
+                                        <div className="col-lg-4">
+                                            <div className="singlePro VehicleMain" onClick={() => { handleShowCloud() }}>
+                                                <div className="Vehicle w-100">
+                                                    <img src={VehicleLogo} alt="" />
+                                                </div>
+                                                <div className="backGrondProduct">
+                                                    <p className="projectTitle">cloudxperte <br /> ( Live Tracking & Services )</p>
+                                                </div>
+                                            </div>
+                                            <div className="ProjectBorderBottom"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second">Second tab content</Tab.Pane>
                         </Tab.Content>
                     </Tab.Container>
                 </div>
             </div>
-
+            <div className="PeronalDetails">
+                <div className="container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam est eligendi dolores nisi omnis maxime dignissimos minus! Laudantium quaerat commodi enim exercitationem. Provident molestias dolores nisi. Temporibus aperiam ducimus accusamus sit dolore pariatur a deserunt et quisquam omnis. Aperiam doloremque omnis consequatur dolores voluptas! Reiciendis iusto alias totam delectus esse sed consequatur ipsam. Mollitia iusto voluptatem accusamus? Tempora blanditiis veritatis corrupti error quo nesciunt. Magni porro ducimus placeat. Sint voluptatem iusto dicta? Voluptatibus, voluptates? Eum commodi nam, quidem quia deserunt, illo animi necessitatibus laboriosam maxime placeat pariatur possimus dignissimos facilis quos! Fugiat sunt cumque atque aliquid suscipit error quia ea sed ratione non, hic veniam excepturi nulla velit sint maxime deserunt? Alias delectus tempora quidem at eveniet consequuntur dignissimos, consequatur natus libero. Facilis, itaque quis nostrum exercitationem velit suscipit ut totam magni voluptatem, dicta cum eius. Tenetur facilis sint doloribus magnam consectetur quasi minus, beatae tempora quis enim perspiciatis cumque ducimus dolor deserunt voluptates quia iusto architecto. Ea non blanditiis quaerat illum molestiae accusamus eius impedit alias, repudiandae fugiat obcaecati repellendus atque commodi deserunt culpa veritatis adipisci. Culpa aliquid, ex quam voluptate praesentium, repellat nemo illum a placeat dolorem ipsa nesciunt adipisci expedita. Consequuntur enim ratione saepe iste facilis!
+                </div>
+            </div>
             {/* Edsys */}
             <Modal show={edsysModal} size='xl' centered onHide={handleClose} className='Common-Modal'>
                 <Modal.Body close>
@@ -557,8 +735,8 @@ const Mywork = () => {
                 </Modal.Body>
             </Modal>
 
-             {/* Fleet Management */}
-             <Modal show={fleetManagement} onHide={handleCloseFleetManagement} size='xl' centered className='Common-Modal'>
+            {/* Fleet Management */}
+            <Modal show={fleetManagement} onHide={handleCloseFleetManagement} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
                         <div className="row">
@@ -569,16 +747,16 @@ const Mywork = () => {
                                 <div className="privewCarosal">
                                     <Carousel fade>
                                         <Carousel.Item>
-                                            <img src={MyUnvrs1} alt="" />
+                                            <img src={FleetPri2} alt="" />
                                         </Carousel.Item>
                                         <Carousel.Item>
-                                            <img src={MyUnvrs2} alt="" />
+                                            <img src={FleetPri3} alt="" />
                                         </Carousel.Item>
                                         <Carousel.Item>
-                                            <img src={MyUnvrs3} alt="" />
+                                            <img src={FleetPri4} alt="" />
                                         </Carousel.Item>
                                         <Carousel.Item>
-                                            <img src={MyUnvrs4} alt="" />
+                                            <img src={FleetPri1} alt="" />
                                         </Carousel.Item>
                                     </Carousel>
                                 </div>
@@ -586,11 +764,138 @@ const Mywork = () => {
                             <div className="col-lg-6">
                                 <div className="projecInformations">
                                     <p className="head">Project Info:</p>
-                                    <p className="contain">My Universe is a multifaceted platform designed to enhance the university experience for students and faculty members. It provides a wide range of features and functionalities to foster connections, share information, and facilitate various university-related activities.</p>
+                                    <p className="contain">This venture is aimed at solving all types of problems faced by transport providers from different walks of life. Transport Providers are a vital part of the modern day society and the everyday issues they face while managing vehicles are real and vast in scale. From business entities having 2-3 vehicles to large fleets with hundreds of vehicles, every business faces its own challenges and problems which they may not realize.</p>
                                     <p className="contain">Client : <span>Redbytes</span></p>
-                                    <p className="contain">Technologies : <span>HTML, Sass, Bootstrap, React Bootstrap , <b>React.js</b></span></p>
+                                    <p className="contain">Technologies : <span>HTML, CSS, Bootstrap, <b>Next.js</b></span></p>
                                     <p className="contain">Role  : <span> UI Development </span></p>
-                                    <p className="contain">URL : <span><a href="http://my-univrs.ui.redbytes.in/">my-Universe.com</a></span></p>
+                                    <p className="contain">URL : <span><a href="https://www.fleetmanagement.ae/">fleetmanagement.ae</a></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Modal.Body>
+            </Modal>
+
+            {/* Deeniyat Plus */}
+            <Modal show={deeniyatPlus} onHide={handleCloseDeeniyat} size='xl' centered className='Common-Modal'>
+                <Modal.Body>
+                    <div className="modal_head">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="heading">Deeniyat Plus</div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="privewCarosal">
+                                    <Carousel fade>
+                                        <Carousel.Item>
+                                            <img src={DeeniyaPri1} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={DeeniyaPri3} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={DeeniyaPri4} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={DeeniyaPri2} alt="" />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="projecInformations">
+                                    <p className="head">Project Info:</p>
+                                    <p className="contain">Their aim is make people better human beings through the teachings of Islam and benefit the whole of humanity.This will help them to be successful in this world and the hereafter as Allah has placed success in following the teachings of Islam. Islam teaches us about faith and worship, it also teaches us about proper reasoning, pure lifestyle and good character thus helping a person to reach the zenith of goodness and chastity. Hence it is obligatory upon every Muslim to dedicate some time from his/her busy schedule to learn and understand the teachings of Islam</p>
+                                    <p className="contain">Client : <span>Deeniyat EduTech</span></p>
+                                    <p className="contain">Technologies : <span>HTML, SASS, <b>JavaScript</b> Bootstrap, <b>React.js</b></span></p>
+                                    <p className="contain">Role  : <span> UI Development & <b>Api Implementations</b> </span></p>
+                                    <p className="contain">URL : <span><a href="http://deeniyat-plus.ui.redbytes.in/">deeniyat-plus.com</a></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Modal.Body>
+            </Modal>
+
+            {/* Cost Calculator */}
+            <Modal show={appCostCalclu} onHide={handleCloseAppCost} size='xl' centered className='Common-Modal'>
+                <Modal.Body>
+                    <div className="modal_head">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="heading">App Cost Calculator</div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="privewCarosal">
+                                    <Carousel fade>
+                                        <Carousel.Item>
+                                            <img src={CostCalcu1} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={CostCalcu3} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={CostCalcu4} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={CostCalcu2} alt="" />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="projecInformations">
+                                    <p className="head">Project Info:</p>
+                                    <p className="contain">Find out how much it will cost to build an app and how long it will take to launch it.
+                                        An app cost calculator built with the user in mind.</p>
+                                    <p className="contain">Client : <span>CloudXperte</span></p>
+                                    <p className="contain">Technologies : <span>HTML, CSS, <b>JavaScript</b> Bootstrap, <b>Next.js</b></span></p>
+                                    <p className="contain">Role  : <span> UI Development & <b>Api Implementations</b> </span></p>
+                                    <p className="contain">URL : <span><a href="https://mobileappdevelopmentcost.com/Calculator/Domain/?utm_source=MADC_LP&utm_medium=Top_CTA_Btn&utm_campaign=Lead_gen">Cost-calculator.com</a></span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Modal.Body>
+            </Modal>
+
+            {/* Test Revel */}
+            <Modal show={testRevel} onHide={handleCloseTestRevel} size='xl' centered className='Common-Modal'>
+                <Modal.Body>
+                    <div className="modal_head">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="heading">Test Revel</div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="privewCarosal">
+                                    <Carousel fade>
+                                        <Carousel.Item>
+                                            <img src={TestRevel1} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={TestRevel3} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={TestRevel4} alt="" />
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img src={TestRevel2} alt="" />
+                                        </Carousel.Item>
+                                    </Carousel>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="projecInformations">
+                                    <p className="head">Project Info:</p>
+                                    <p className="contain">From Glitches to Greatness: We"re not just bug hunters; we"re architects of software success. Our QA wizards wield their magic to transform the chaos into something that nears perfection. Partner with us today and let"s sculpt digital excellence together!</p>
+                                    <p className="contain">Client : <span>CloudXperte</span></p>
+                                    <p className="contain">Technologies : <span>HTML, CSS, Bootstrap, <b>Next.js</b></span></p>
+                                    <p className="contain">Role  : <span> UI Development & </span></p>
+                                    <p className="contain">URL : <span><a href="https://testreveal.com/">testreveal.com</a></span></p>
 
                                 </div>
                             </div>

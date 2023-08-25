@@ -135,6 +135,17 @@
                 }
 
             }
+            .Deeniyat {
+                display: flex;
+                justify-content: center;
+                background: #aafcb5;
+
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+
+            }
             .VehicalTracking {
 
                 display: flex;
@@ -193,7 +204,18 @@
                 display: flex;
                 justify-content: center;
                 // background: white;
+                width: 100%;
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+            .FleetManagement {
 
+                display: flex;
+                justify-content: center;
+                background: #f6efe9;
+                width: 100%;
                 img {
                     width: 80%;
                     height: auto;
