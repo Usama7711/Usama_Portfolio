@@ -29,8 +29,10 @@
     position: relative;
 
     img {
-        height: auto;
+        height: 100vh;
         width: 100%;
+        position: relative;
+        object-fit: cover;
     }
 
     .bdopacity {

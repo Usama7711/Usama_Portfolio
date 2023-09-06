@@ -5,6 +5,9 @@ import Services from './Services';
 import Summary from './Summary';
 import TopScroller from './TopScroller';
 import Mywork from './Mywork';
+import Contact from './Contact';
+
+
 const DashBoard = () => {
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -36,13 +39,10 @@ const DashBoard = () => {
     return () => clearInterval(interval);
   }, [currentLineIndex, currentWordIndex, selfData]);
 
-
-
-
   return (
     <div id='cx-main'>
       <div className="dashboard_wrapper" id='dashBoardMe'>
-        <img src={bgimg} alt=""/>
+        <img src={bgimg} alt="" />
         <div className="bdopacity"></div>
         <div className="contain">
           <p className="Welcome">Welcome</p>
@@ -54,7 +54,8 @@ const DashBoard = () => {
       <Services />
       <Summary />
       <Mywork />
-      <TopScroller/>
+      <TopScroller />
+      <Contact />
     </div>
   )
 }

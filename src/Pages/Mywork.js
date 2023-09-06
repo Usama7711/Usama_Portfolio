@@ -5,6 +5,7 @@ import Priston from "../assets/images/PristonLogo.svg"
 import VehicleLogo from "../assets/images/CloudLogo.svg"
 import WifiLogo from "../assets/images/WifiLogo.png"
 import officeLogo from "../assets/images/logo.svg"
+import Cancel from "../assets/images/Cancel.svg"
 import EdsysPri1 from "../assets/images/EdsysPri1.png"
 import EdsysPri2 from "../assets/images/EdsysPri2.png"
 import EdsysPri3 from "../assets/images/EdsysPri3.png"
@@ -112,7 +113,7 @@ const Mywork = () => {
     return (
         <div className="MyworkMian">
             <div className="headerMywork">
-                <div className="backGroundHeading" id='ResumeMe'>
+                <div className="backGroundHeading" id='MyWork'>
                     PORTFoLIO
                 </div>
                 <div className="mainHeading">
@@ -146,7 +147,7 @@ const Mywork = () => {
                             <Tab.Pane eventKey="first">
                                 <div className="AllProject">
                                     <div className="row">
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro" onClick={() => { handleShow() }}>
                                                 <div className="edsys">
                                                     <img src={edsys} alt="" />
@@ -157,7 +158,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro WifiMain" onClick={() => { handleShowWifi() }}>
                                                 <div className="Wifi">
                                                     <img src={WifiLogo} alt="" />
@@ -168,7 +169,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro pristonMain" onClick={() => { handleShowPriston() }}>
                                                 <div className="Priston w-100">
                                                     <img src={Priston} alt="" />
@@ -179,7 +180,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro VehicleMain" onClick={() => { handleShowCloud() }}>
                                                 <div className="Vehicle w-100">
                                                     <img src={VehicleLogo} alt="" />
@@ -190,7 +191,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro WifiMain" onClick={() => { handleShowOffice() }}>
                                                 <div className="office">
                                                     <img src={officeLogo} alt="" />
@@ -201,7 +202,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro pristonMain" onClick={() => { handleShowVehicalTracking() }}>
                                                 <div className="VehicalTracking w-100">
                                                     <img src={VehiclTrackingLogo} alt="" />
@@ -212,7 +213,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro" onClick={() => { handleShowFleetManagement() }}>
                                                 <div className="FleetManagement">
                                                     <img src={FleetLogo} alt="" />
@@ -223,7 +224,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro VehicleMain" onClick={() => { handleShowAnimalAdmin() }}>
                                                 <div className="AminalApp w-100">
                                                     <img src={AniamlApp} alt="" />
@@ -234,7 +235,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro MyuniversZ" onClick={() => { handleShowMyUnivers() }}>
                                                 <div className="office">
                                                     <img src={MyUnivers} alt="" />
@@ -251,7 +252,7 @@ const Mywork = () => {
                             <Tab.Pane eventKey="second" >
                                 <div className="AllProject">
                                     <div className="row">
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro pristonMain" onClick={() => { handleShowDeeniyat() }}>
                                                 <div className="Deeniyat w-100">
                                                     <img src={DeeniyatLogo} alt="" />
@@ -262,7 +263,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro pristonMain" onClick={() => { handleShowPriston() }}>
                                                 <div className="Priston w-100">
                                                     <img src={Priston} alt="" />
@@ -273,7 +274,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro WifiMain" onClick={() => { handleShowWifi() }}>
                                                 <div className="Wifi">
                                                     <img src={WifiLogo} alt="" />
@@ -285,7 +286,7 @@ const Mywork = () => {
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
 
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro" onClick={() => { handleShow() }}>
                                                 <div className="edsys">
                                                     <img src={edsys} alt="" />
@@ -296,7 +297,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro pristonMain" onClick={() => { handleShowVehicalTracking() }}>
                                                 <div className="VehicalTracking w-100">
                                                     <img src={VehiclTrackingLogo} alt="" />
@@ -307,7 +308,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro VehicleMain" onClick={() => { handleShowAnimalAdmin() }}>
                                                 <div className="AminalApp w-100">
                                                     <img src={AniamlApp} alt="" />
@@ -318,7 +319,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro MyuniversZ" onClick={() => { handleShowMyUnivers() }}>
                                                 <div className="office">
                                                     <img src={MyUnivers} alt="" />
@@ -334,7 +335,7 @@ const Mywork = () => {
                             <Tab.Pane eventKey="three">
                                 <div className="AllProject">
                                     <div className="row">
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro" onClick={() => { handleShowAppCost() }}>
                                                 <div className="office">
                                                     <img src={AppCost} alt="" />
@@ -345,7 +346,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro" onClick={() => { handleShowTestRevel() }}>
                                                 <div className="FleetManagement">
                                                     <img src={TestRevellogo} alt="" />
@@ -356,7 +357,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro" onClick={() => { handleShowFleetManagement() }}>
                                                 <div className="FleetManagement">
                                                     <img src={FleetLogo} alt="" />
@@ -367,7 +368,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro WifiMain" onClick={() => { handleShowOffice() }}>
                                                 <div className="office">
                                                     <img src={officeLogo} alt="" />
@@ -378,7 +379,7 @@ const Mywork = () => {
                                             </div>
                                             <div className="ProjectBorderBottom"></div>
                                         </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 col-md-6 col-sm-6">
                                             <div className="singlePro VehicleMain" onClick={() => { handleShowCloud() }}>
                                                 <div className="Vehicle w-100">
                                                     <img src={VehicleLogo} alt="" />
@@ -396,15 +397,11 @@ const Mywork = () => {
                     </Tab.Container>
                 </div>
             </div>
-            <div className="PeronalDetails">
-                <div className="container">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam est eligendi dolores nisi omnis maxime dignissimos minus! Laudantium quaerat commodi enim exercitationem. Provident molestias dolores nisi. Temporibus aperiam ducimus accusamus sit dolore pariatur a deserunt et quisquam omnis. Aperiam doloremque omnis consequatur dolores voluptas! Reiciendis iusto alias totam delectus esse sed consequatur ipsam. Mollitia iusto voluptatem accusamus? Tempora blanditiis veritatis corrupti error quo nesciunt. Magni porro ducimus placeat. Sint voluptatem iusto dicta? Voluptatibus, voluptates? Eum commodi nam, quidem quia deserunt, illo animi necessitatibus laboriosam maxime placeat pariatur possimus dignissimos facilis quos! Fugiat sunt cumque atque aliquid suscipit error quia ea sed ratione non, hic veniam excepturi nulla velit sint maxime deserunt? Alias delectus tempora quidem at eveniet consequuntur dignissimos, consequatur natus libero. Facilis, itaque quis nostrum exercitationem velit suscipit ut totam magni voluptatem, dicta cum eius. Tenetur facilis sint doloribus magnam consectetur quasi minus, beatae tempora quis enim perspiciatis cumque ducimus dolor deserunt voluptates quia iusto architecto. Ea non blanditiis quaerat illum molestiae accusamus eius impedit alias, repudiandae fugiat obcaecati repellendus atque commodi deserunt culpa veritatis adipisci. Culpa aliquid, ex quam voluptate praesentium, repellat nemo illum a placeat dolorem ipsa nesciunt adipisci expedita. Consequuntur enim ratione saepe iste facilis!
-                </div>
-            </div>
             {/* Edsys */}
             <Modal show={edsysModal} size='xl' centered onHide={handleClose} className='Common-Modal'>
                 <Modal.Body close>
                     <div className="modal_head">
+                        <img src={Cancel} alt="" onClick={handleClose} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">Edsys</div>
@@ -445,6 +442,7 @@ const Mywork = () => {
             <Modal show={pristonModal} size='xl' centered onHide={handleClosePriston} className='Common-Modal'>
                 <Modal.Body close>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleClosePriston} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">Priston-Front-Office</div>
@@ -485,6 +483,7 @@ const Mywork = () => {
             <Modal show={cloudModal} onHide={handleCloseCloud} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseCloud} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">CloudXperte</div>
@@ -525,6 +524,7 @@ const Mywork = () => {
             <Modal show={wifiAttendance} onHide={handleCloseWifi} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseWifi} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">Wifi Attendance</div>
@@ -568,6 +568,7 @@ const Mywork = () => {
             <Modal show={officeCaller} onHide={handleCloseOffice} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseOffice} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">Office Caller</div>
@@ -610,6 +611,7 @@ const Mywork = () => {
             <Modal show={vehicalTracking} onHide={handleCloseVehicalTracking} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseVehicalTracking} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">Vehicle Tracking</div>
@@ -655,6 +657,7 @@ const Mywork = () => {
             <Modal show={animalAdmin} onHide={handleCloseAnimalAdmin} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseAnimalAdmin} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">Animal App - Admin</div>
@@ -697,6 +700,7 @@ const Mywork = () => {
             <Modal show={myUnivers} onHide={handleCloseMyUnivers} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseMyUnivers} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">My Universe</div>
@@ -739,6 +743,7 @@ const Mywork = () => {
             <Modal show={fleetManagement} onHide={handleCloseFleetManagement} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseFleetManagement} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">Fleet Management</div>
@@ -781,6 +786,7 @@ const Mywork = () => {
             <Modal show={deeniyatPlus} onHide={handleCloseDeeniyat} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseDeeniyat} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">Deeniyat Plus</div>
@@ -823,6 +829,7 @@ const Mywork = () => {
             <Modal show={appCostCalclu} onHide={handleCloseAppCost} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseAppCost} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">App Cost Calculator</div>
@@ -866,6 +873,7 @@ const Mywork = () => {
             <Modal show={testRevel} onHide={handleCloseTestRevel} size='xl' centered className='Common-Modal'>
                 <Modal.Body>
                     <div className="modal_head">
+                    <img src={Cancel} alt="" onClick={handleCloseTestRevel} className='CancelArrow' />
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="heading">Test Revel</div>

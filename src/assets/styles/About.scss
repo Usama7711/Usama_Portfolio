@@ -6,6 +6,10 @@
         text-align: center;
         height: 140px;
         margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .backGroundHeading {
             font-size: calc(1.95rem + 8.4vw);
@@ -14,17 +18,14 @@
             color: #dee3e4 !important;
             opacity: 0.6;
             position: absolute;
-            top: 0;
-            left: 23%;
+            width: 100%;
         }
 
         .mainHeading {
             font-weight: 600;
             font-size: 2.25rem;
             line-height: 1.5;
-            position: absolute;
-            top: 45%;
-            left: 41%;
+            z-index: 1;
         }
 
         .BottomBorderAbout {

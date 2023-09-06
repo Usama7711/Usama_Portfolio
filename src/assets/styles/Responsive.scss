@@ -1,0 +1,82 @@
+.dashboard_wrapper {
+    z-index: 1;
+}
+
+@media all and (max-width : 768px) {
+    .CancelArrow{
+        display: block !important;
+    }
+    .addressMain {
+        margin-bottom: 20px;
+    }
+    .WorkRatio{
+        flex-wrap: wrap;
+        .singleRatio{
+            margin-bottom: 10px;
+            width: 50%;
+            border-right: none !important;
+        }
+    }
+   
+
+    .headerMywork,
+    .ContactMain .headerContact,
+    .SummaryMain .headerAbout,
+    .Services_Main .headerAbout,
+    .AboutUs_Main .headerAbout {
+        margin: 20px 0 !important;
+        height: auto !important;
+    }
+
+    .SummaryMain .summryExprince .ExpSingle {
+        margin-bottom: 10px;
+    }
+    .AboutUs_Main .WorkRatio .singleRatio {
+        padding-right: 15px;
+    }
+
+    .dashboard_wrapper .contain .Details {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .ReponsiveHeaderTop {
+        display: block;
+
+        img {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            height: 30px;
+            width: 30px;
+            z-index: 2;
+            border: 2px solid #20c997;
+            border-radius: 5px;
+        }
+    }
+
+    .repsonsiveInerrList {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            padding: 10px;
+            font-weight: 600;
+            transition: linear 0.5s;
+
+            &:hover {
+                color: #20c997;
+                border-bottom: 1px solid #20c997;
+            }
+        }
+    }
+
+    #d_none_For_responsive {
+        display: none;
+    }
+}
+
+
+@media all and (max-width : 991px) {
+    .ReponsiveHeaderTop {}
+}

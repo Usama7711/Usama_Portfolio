@@ -1,8 +1,9 @@
 import React from 'react'
 import IMG from "../assets/images/gb_img1.jpg"
 import download from "../assets/images/download-solid.svg"
+import reume from "../assets/Usama_Musab.pdf"
 const Summary = () => {
-    const cvFileName = 'your_cv.jpg'; // Replace with the actual filename of your CV
+    const cvFileName = 'Usama_Musab.pdf'; // Replace with the actual filename of your CV
     return (
         <div className="SummaryMain" >
             <div className="headerAbout">
@@ -138,7 +139,7 @@ const Summary = () => {
                             </div>
                         </div>
                         <div className="col-lg-12 text-center">
-                            <a href={IMG} download={cvFileName} className='SkillDownloadCv'>
+                            <a href={reume} download={cvFileName} className='SkillDownloadCv'>
                                 <button>
                                     Download CV
                                     <img src={download} alt="" />

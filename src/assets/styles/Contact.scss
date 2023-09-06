@@ -1,0 +1,110 @@
+.ContactMain {
+    height: 100vh;
+    .headerContact {
+        position: relative;
+        text-align: center;
+        height: 140px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .backGroundHeading {
+            font-size: calc(1.95rem + 8.4vw);
+            line-height: 1.4;
+            font-weight: 600;
+            color: #dee3e4 !important;
+            opacity: 0.6;
+            position: absolute;
+            width: 100%;
+        }
+
+        .mainHeading {
+            font-weight: 600;
+            font-size: 2.25rem;
+            line-height: 1.5;
+            z-index: 1;
+        }
+
+        .BottomBorderAbout {
+            display: flex;
+            border: 2px solid #20c997;
+            width: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .ContactBody {
+        .addressMain {
+            .headingAdd {
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            .AddressDis {
+                color: #4c4d4d;
+                margin-bottom: 15px;
+            }
+
+            .ConnectionList {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                img {
+                    margin-right: 20px;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .ContactBoxMain {
+            .headingContact {
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            .formSingleFild {
+                margin-bottom: 10px;
+
+                input {
+                    width: 100%;
+                    padding: 10px 10px;
+                    border-radius: 10px;
+                    border: 1px solid #dae1e3;
+                    background-color: white;
+                    color: #20c997;
+                    font-weight: 500;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    padding: 10px 10px;
+                    border-radius: 10px;
+                    border: 1px solid #dae1e3;
+                    background-color: white;
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}

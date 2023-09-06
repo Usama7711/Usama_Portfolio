@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import IMG from "../assets/images/gb_img1.jpg"
+import reume from "../assets/Usama_Musab.pdf"
 
 const About = () => {
     const emailAddress = 'usamamusab16@gmail.com';
@@ -13,7 +14,7 @@ const About = () => {
     };
 
     // Download CV
-    const cvFileName = 'your_cv.jpg'; // Replace with the actual filename of your CV
+    const cvFileName = 'Usama_Resume.pdf'; // Replace with the actual filename of your CV
 
 
     // number Count
@@ -78,7 +79,7 @@ const About = () => {
                                 <p className="contain">Nanded, Maharashtra, India</p>
                             </div>
                             <label className="DownloadCV">
-                                <a href={IMG} download={cvFileName}>
+                                <a href={reume} download={cvFileName}>
                                     <button>Download CV</button>
                                 </a>
                             </label>
